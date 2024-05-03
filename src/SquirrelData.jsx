@@ -13,7 +13,6 @@ const SquirrelData = () => {
                 }
                 const jsonData = await response.json();
                 setSquirrelInfo(jsonData)
-                console.log(jsonData);
             } catch (error) {
                 console.error(error)
             }
