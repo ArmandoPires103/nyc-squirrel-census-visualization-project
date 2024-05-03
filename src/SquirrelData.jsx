@@ -3,6 +3,7 @@ import { grabName } from "../helper";
 const SquirrelData = () => {
   const [squirrelInfo, setSquirrelInfo] = useState([]);
 
+
   useEffect(() => {
     const fetchData = async () => {
       try {

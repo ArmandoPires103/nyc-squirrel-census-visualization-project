@@ -1,0 +1,16 @@
+.nav-container {
+    display: block;
+    margin: 12px 12px;
+    padding: 12px 12px;
+    width: auto;
+    border: 2px solid black;
+
+}
+
+
+
+
+.nav-items-li {
+   text-decoration: none;
+   list-style: none;
+}
