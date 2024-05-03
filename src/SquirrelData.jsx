@@ -20,9 +20,21 @@ const SquirrelData = () => {
         }
         fetchData()
     }, []);
-  return (
-    <div>SquirrelData</div>
-  )
-}
-
+    return (
+        <div>
+            <h2>Squirrel Data</h2>
+            <ul>
+                {squirrelInfo.map((squirrel, index) => (
+                    <li key={index}>
+                        <strong>Squirrel ID:</strong> {squirrel.unique_squirrel_id}<br />
+                        <strong>Eating:</strong> {squirrel.eating ? 'Yes' : 'No'}<br />
+                        <strong>Foraging:</strong> {squirrel.foraging ? 'Yes' : 'No'}<br />
+                        <strong>Runs From:</strong> {squirrel.runs_from ? 'Yes' : 'No'}<br />
+                        <strong>Attacks you:</strong> {squirrel.approaches ? 'Yes' : 'No'}<br/>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
 export default SquirrelData
