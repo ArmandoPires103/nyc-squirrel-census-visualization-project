@@ -1,0 +1,23 @@
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.squirrel-card {
+  border: 3px solid black;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.squirrel-img {
+  object-fit: cover;
+  height: 100px;
+}
+
+li {
+  list-style: none;
+}
