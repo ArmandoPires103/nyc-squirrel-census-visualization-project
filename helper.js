@@ -102,3 +102,25 @@ export function grabName() {
   else finalLastName = finalLastName[0];
   return `${firstName} "${nickname}" ${finalLastName}`;
 }
+
+export function dateFormatting(date) {
+  const months = {
+    1: "January",
+    2: "February",
+    3: "March",
+    4: "April",
+    5: "May",
+    6: "June",
+    7: "July",
+    8: "August",
+    9: "September",
+    10: "October",
+    11: "November",
+    12: "December",
+  };
+  const monthNumber = date.slice(0, 2);
+  const dayNumber = date.slice(2, 4);
+  const year = date.slice(4, 8);
+
+  return `${months[monthNumber]} ${dayNumber}, ${year}`;
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { grabName } from "../helper";
+import { dateFormatting, grabName } from "../helper";
 import "../Styles/beware.css";
 const SquirrelData = () => {
   const [squirrelInfo, setSquirrelInfo] = useState([]);
@@ -28,7 +28,7 @@ const SquirrelData = () => {
   }, []);
   return (
     <div>
-      <h2>Beware of these Squirrels!</h2>
+      <h1>Beware of these Squirrels!</h1>
       <div className="card-layout">
         {squirrelInfo.map((squirrel) => (
           <div key={squirrel.unique_squirrel_id} className="squirrel-card">
@@ -40,11 +40,16 @@ const SquirrelData = () => {
             />
             <ul>
               <h4>Description: </h4>
-              <li>Primary Fur Color: {squirrel.primary_fur_color}</li>
-              <li>{squirrel.age}</li>
+              <li>
+                <strong>Primary Fur Color:</strong> {squirrel.primary_fur_color}
+              </li>
+              <li>
+                {" "}
+                <strong>Age Category: </strong> {squirrel.age}
+              </li>
               <li>
                 <strong>Last Seen: </strong>
-                {squirrel.date}
+                {dateFormatting(squirrel.date)}
               </li>
             </ul>
             <p></p>

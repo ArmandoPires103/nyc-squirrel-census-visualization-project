@@ -11,13 +11,26 @@
   padding: 10px;
   width: 100%;
   text-align: center;
+  min-height: 350px;
 }
 
 .squirrel-img {
-  object-fit: cover;
+  /* object-fit: cover; */
   height: 100px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 li {
   list-style: none;
+  padding: 8px;
+}
+
+.squirrel-card p {
+  font-size: x-large;
+  padding: 8px;
+}
+
+ul {
+  font-size: large;
 }
