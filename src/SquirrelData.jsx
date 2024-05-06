@@ -31,12 +31,12 @@ const SquirrelData = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Beware of these Squirrels!</h1>
+    <div className="beware-parent">
+      <h1 className="beware-title-h1">Beware of these Squirrels!</h1>
       <div className="card-layout">
         {squirrelInfo.map((squirrel) => (
           <div key={squirrel.unique_squirrel_id} className="squirrel-card">
-            <p>{squirrel.name}</p>
+            <p className="beware-title-p">{squirrel.name}</p>
             <img
               src={squirrel.image} // Use the dynamically assigned image URL
               alt=""
