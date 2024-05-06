@@ -4,13 +4,39 @@
     padding: 12px 12px;
     width: auto;
     border: 2px solid black;
-
+    border-radius: 5%;
+    background-color: #5b2d31;
 }
 
+.nav-h1-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
+.nav-h1 {
+    width: auto;
+    text-align: center;
+    padding-bottom: 18px;
+    color: #FFA970;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 130px;
+
+}
 
 
 .nav-items-li {
    text-decoration: none;
    list-style: none;
+   font-size: large;
+   color: rgb(70, 70, 248);
+}
+
+.nav-items-li:hover {
+    text-decoration: none;
+    color: blue;
 }
